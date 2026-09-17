@@ -7,7 +7,7 @@ SIDESTORE_LATEST_URL=$(curl -s https://api.github.com/repos/SideStore/SideStore/
 
 if [ -z "$SIDESTORE_LATEST_URL" ]; then
     echo "No se encontró enlace IPA en la API, utilizando enlace estático de latest..."
-    SIDESTORE_LATEST_URL="https://github.com/SideStore/SideStore/releases/latest/download/SideStore.ipa"
+    SIDESTORE_LATEST_URL="https://github.com/SideStore/SideStore/releases/nightly/download/SideStore.ipa"
 fi
 
 echo "Descargando desde: $SIDESTORE_LATEST_URL"
